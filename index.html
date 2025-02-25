@@ -1,50 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson Schedule</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    table {
-      width: 80%;
-      border-collapse: collapse;
-      margin: 20px auto;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f4f4f4;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    tr:hover {
-      background-color: #f1f1f1;
-    }
-  </style>
+  <title>جدول الحصص</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1>Lesson Schedule</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Day</th>
-        <th>Time</th>
-        <th>Subject</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Schedule rows will be appended here -->
-    </tbody>
-  </table>
+
+  <div class="container">
+    <h1>جدول الحصص</h1>
+    <button id="addLessons">إضافة حصص</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>اليوم</th>
+          <th>الوقت</th>
+          <th>المادة</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
   <script src="script.js"></script>
 </body>
+
 </html>
